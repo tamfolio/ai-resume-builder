@@ -17,6 +17,17 @@
       padding: 0;
       box-shadow: none;
     }
+
+    .skill-rating-container {
+      display: block;
+    }
+  
+    /* Ensure the progress bar styles are applied in the print */
+    .skill-rating-bar {
+      display: block;  /* Ensure it's rendered */
+      height: 8px;     /* Adjust height for visibility */
+      background-color: #4CC800; /* Optional: Set the color here or use the dynamic color */
+    }
   }
 
   @page{

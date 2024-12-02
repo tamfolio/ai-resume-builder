@@ -16,11 +16,11 @@ function ResumePreview() {
         borderColor:resumeInfo?.themeColor
     }}>
         {/* Personal Detail  */}
-            <PersonalDetailPreview resumeInfo={resumeInfo} />
+        <PersonalDetailPreview resumeInfo={resumeInfo} />
         {/* Summery  */}
-            <SummeryPreview resumeInfo={resumeInfo} />
+        <SummeryPreview resumeInfo={resumeInfo} />
         {/* Professional Experience  */}
-           {resumeInfo?.Experience?.length>0&& <ExperiencePreview resumeInfo={resumeInfo} />}
+        {resumeInfo?.Experience?.length>0&& <ExperiencePreview resumeInfo={resumeInfo} />}
         {/* Educational  */}
         {resumeInfo?.Education?.length>0&&   <EducationalPreview resumeInfo={resumeInfo} />}
         {/* Skilss  */}
