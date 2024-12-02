@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 function SkillsPreview({ resumeInfo }) {
   return (
@@ -23,10 +23,11 @@ function SkillsPreview({ resumeInfo }) {
             <h2 className="text-xs">{skill.name}</h2>
             <div className="h-2 bg-gray-200 w-[120px]">
               <div
-                className="h-2"
+                className="h-2 skill-rating-bar"
                 style={{
                   backgroundColor: resumeInfo?.themeColor,
-                  width: skill?.rating * 20 + '%',
+                  width: skill?.rating * 20 + "%", // Dynamically set width
+                  display: "inline-block", // Ensure block display for the rating bar
                 }}
               ></div>
             </div>
