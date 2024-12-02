@@ -1,11 +1,15 @@
-import React from 'react'
+import PropTypes from 'prop-types';
 
-function SummeryPreview({resumeInfo}) {
+function SummeryPreview({ resumeInfo }) {
   return (
-    <p className='text-xs'>
-        {resumeInfo?.summery}
-    </p>
-  )
+    <p className="text-xs">{resumeInfo?.summery}</p>
+  );
 }
 
-export default SummeryPreview
+SummeryPreview.propTypes = {
+  resumeInfo: PropTypes.shape({
+    summery: PropTypes.string,
+  }).isRequired,
+};
+
+export default SummeryPreview;

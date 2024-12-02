@@ -1,11 +1,11 @@
-import Header from '@/components/custom/Header'
 import { Button } from '@/components/ui/button'
 import { ResumeInfoContext } from '@/context/ResumeInfoContext'
-import ResumePreview from '@/dashboard/resume/components/ResumePreview'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import GlobalApi from './../../../../service/GlobalApi'
-import { RWebShare } from 'react-web-share'
+import ResumePreview from '@/dashboard/resume/components/ResumePreview'
+import Header from '@/components/custom/Header'
+// import { RWebShare } from 'react-web-share'
 
 function ViewResume() {
 
@@ -54,7 +54,7 @@ function ViewResume() {
         </div>
         <div className='my-10 mx-10 md:mx-20 lg:mx-36'>
         <div id="print-area" >
-                <ResumePreview/>
+            {resumeInfo && <ResumePreview />}
             </div>
             </div>
     </ResumeInfoContext.Provider>

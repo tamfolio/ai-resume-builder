@@ -1,5 +1,5 @@
 import { Input } from '@/components/ui/input'
-import React, { useContext, useEffect, useState } from 'react'
+import{ useContext, useEffect, useState } from 'react'
 import { Rating } from '@smastrom/react-rating'
 
 import '@smastrom/react-rating/style.css'
